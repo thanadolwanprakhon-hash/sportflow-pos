@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<title>รายงาน SportFlow POS</title>
+<style>
+@page{size:A4;margin:0}*{box-sizing:border-box}body{margin:0;background:#ddd;font-family:Tahoma,"Leelawadee UI",sans-serif;color:#172033;font-size:10.5pt;line-height:1.55}.sheet{width:210mm;height:297mm;margin:8mm auto;background:#fff;padding:23mm 18mm 18mm;position:relative;overflow:hidden;page-break-after:always}.sheet:last-child{page-break-after:auto}.header{position:absolute;left:0;right:0;top:0;height:16mm;background:#101827;color:#fff;padding:0 18mm;display:flex;align-items:center;justify-content:space-between}.header .brand{font-weight:700;letter-spacing:.5px}.header .brand i{display:inline-block;width:7mm;height:7mm;background:#ff5a1f;border-radius:2mm;vertical-align:middle;margin-right:3mm}.header small{color:#aeb6c5;font-size:7pt}.footer{position:absolute;left:18mm;right:18mm;bottom:7mm;border-top:.3mm solid #e6e9ef;padding-top:2mm;color:#778196;font-size:7pt;display:flex;justify-content:space-between}.cover{padding:0;display:flex;flex-direction:column}.cover-top{height:194mm;background:linear-gradient(145deg,#0b1423,#182740);padding:31mm 24mm;color:#fff;text-align:center;position:relative;overflow:hidden}.cover-top:after{content:"";position:absolute;width:150mm;height:150mm;border:18mm solid rgba(255,255,255,.025);border-radius:50%;right:-75mm;bottom:-80mm}.logo{width:18mm;height:18mm;background:#ff5a1f;border-radius:5mm;display:grid;place-items:center;margin:0 auto 7mm;font-size:21pt;font-weight:700;transform:rotate(-5deg);box-shadow:0 3mm 8mm rgba(255,90,31,.3)}.cover-word{font:700 24pt Arial}.cover-word span,.orange{color:#ff5a1f}.tag{font:700 7pt Arial;letter-spacing:2.3px;color:#909caf;margin-top:1mm}.cover h1{font-size:27pt;line-height:1.35;margin:29mm 0 4mm}.cover h2{font-size:13pt;font-weight:400;color:#b8c0ce;margin:0}.cover-bottom{flex:1;padding:18mm 28mm;text-align:center}.cover-bottom h3{font-size:11pt;margin:0 0 5mm}.cover-bottom p{line-height:2;margin:2mm}.cover-bottom small{display:block;margin-top:9mm;color:#778196}.eyebrow{color:#ff5a1f;font:700 7pt Arial;letter-spacing:1.5px;margin:0 0 1mm}.title{font-size:20pt;line-height:1.25;color:#101827;margin:0 0 3mm}.title-line{width:100%;height:.7mm;background:#ff5a1f;margin:0 0 5mm}.h2{font-size:13pt;margin:4mm 0 2mm;color:#101827}.h3{font-size:10.5pt;color:#e7440c;margin:3mm 0 1.5mm}p{margin:0 0 2.4mm}.lead{font-size:11.5pt;line-height:1.7}.callout{background:#fff2ed;border:.3mm solid #ffc4ad;border-left:2mm solid #ff5a1f;border-radius:2mm;padding:4mm 5mm;margin:4mm 0}.callout strong{display:block;color:#e7440c;margin-bottom:1mm}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm}.card{border:.3mm solid #e6e9ef;border-radius:3mm;padding:4mm;background:#fff}.card .num{font:700 20pt Arial;color:#ff5a1f}.card small{color:#778196}.bullet{position:relative;padding-left:5mm;margin:1.4mm 0}.bullet:before{content:"•";position:absolute;left:1mm;color:#ff5a1f;font-size:15pt;line-height:1}.steps{counter-reset:step}.step{counter-increment:step;display:grid;grid-template-columns:9mm 1fr;gap:2mm;margin:2mm 0;align-items:start}.step:before{content:counter(step);width:7mm;height:7mm;border-radius:50%;background:#fff0ea;color:#e7440c;font:700 8pt Arial;display:grid;place-items:center}.step b{display:block}.step span{color:#5f697a;font-size:9pt}table{width:100%;border-collapse:collapse;margin:3mm 0;font-size:8.4pt;line-height:1.42}th{background:#101827;color:#fff;text-align:left;padding:2.4mm 2.8mm}td{border:.3mm solid #e6e9ef;padding:2.1mm 2.8mm;vertical-align:top}tr:nth-child(even) td{background:#fafafb}.mini td,.mini th{padding:1.7mm 2.2mm;font-size:8pt}.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:2mm;margin:4mm 0}.flow div{background:#f5f6f8;border-radius:2mm;padding:3mm 2mm;text-align:center;position:relative;font-size:8.3pt}.flow div:not(:last-child):after{content:"›";position:absolute;right:-2mm;top:8mm;color:#ff5a1f;font-size:16pt;z-index:2}.flow b{display:block;color:#101827;margin-bottom:1mm}.flow span{color:#6f7888}.code{font:8.4pt Consolas,monospace;background:#101827;color:#dbe2ee;border-radius:2mm;padding:3mm 4mm;margin:2mm 0;line-height:1.6}.badge{display:inline-block;border-radius:5mm;padding:.5mm 2.5mm;font-size:7.5pt;font-weight:700}.pass{background:#e7f8f1;color:#168a63}.scope-list{display:grid;grid-template-columns:1fr 1fr;gap:2.5mm}.scope-item{border:.3mm solid #e6e9ef;border-radius:2mm;padding:3mm;display:flex;gap:3mm}.scope-icon{width:9mm;height:9mm;border-radius:2.5mm;background:#fff0ea;color:#ff5a1f;display:grid;place-items:center;font-weight:700;flex:none}.scope-item b{display:block}.scope-item span{font-size:8.3pt;color:#6f7888}.toc{margin-top:4mm}.toc div{display:flex;border-bottom:.3mm dotted #bbc1cb;padding:2.1mm 0}.toc b{width:12mm;color:#ff5a1f}.toc span:first-of-type{flex:1}.toc em{font-style:normal;color:#778196}.timeline{border-left:1mm solid #ff5a1f;margin-left:5mm;padding-left:6mm}.timeline-row{margin:3mm 0;position:relative}.timeline-row:before{content:"";position:absolute;left:-8.2mm;top:1mm;width:3.5mm;height:3.5mm;border-radius:50%;background:#ff5a1f;border:1mm solid #fff}.timeline-row b{display:inline-block;width:24mm;color:#e7440c}.check{font-size:9pt;margin:2mm 0}.check:before{content:"✓";display:inline-grid;place-items:center;width:5mm;height:5mm;border-radius:1.5mm;background:#e7f8f1;color:#168a63;font-weight:700;margin-right:2mm}@media print{body{background:#fff}.sheet{margin:0}}
+</style>
+<style>
+body.preview{background:#fff}body.preview .sheet{display:none;margin:0}body.preview .sheet.preview-page{display:block}
+.header{display:none}
+.sheet:not(.cover){padding-top:18mm}
+.cover-logo{display:block;width:76mm;height:auto;margin:0 auto;background:transparent;border-radius:0;box-shadow:none}
+.cover h1{font-size:21pt;line-height:1.38;margin:16mm 0 4mm}
+.cover h2{font-size:11pt}
+.cover-bottom{padding-top:16mm}
+.cover-bottom h3{font-size:12pt;margin-bottom:5mm}
+.cover-bottom p{font-size:11pt;line-height:1.75;margin:1.5mm 0}
+.student-value{font-weight:700;color:#101827}
+/* Monochrome report theme: keep the web application artwork unchanged. */
+body{background:#d9d9d9;color:#111}
+.cover-top{background:linear-gradient(145deg,#111,#333);color:#fff}
+.cover-top:after{border-color:rgba(255,255,255,.04)}
+.cover-logo{filter:drop-shadow(0 0 .8mm rgba(255,255,255,.55))}
+.cover h2{color:#d7d7d7}
+.student-value,.title,.h2,.flow b{color:#111}
+.eyebrow,.h3,.orange,.card .num,.bullet:before,.flow div:not(:last-child):after,.toc b,.timeline-row b{color:#111}
+.title-line{background:#111}
+.callout{background:#f2f2f2;border-color:#aaa;border-left-color:#111}
+.callout strong{color:#111}
+.card,.scope-item{border-color:#aaa}
+.card small,.step span,.scope-item span,.flow span,.toc em,.footer,.cover-bottom small{color:#555}
+.step:before,.scope-icon{background:#e9e9e9;color:#111}
+th,.code{background:#222;color:#fff}
+td{border-color:#aaa}
+tr:nth-child(even) td{background:#f3f3f3}
+.flow div{background:#eee}
+.pass,.check:before{background:#e6e6e6;color:#111}
+.timeline{border-left-color:#111}
+.timeline-row:before{background:#111}
+.footer{border-top-color:#aaa}
+p[style*="color"]{color:#555!important}
+@media print{*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+
+<section class="sheet cover">
+  <div class="cover-top"><img class="cover-logo" src="../public/images/sportflow-logo-transparent.png" alt="SportFlow Smart Retail POS"><h1>รายงานการพัฒนาระบบ POS<br>ร้านขายอุปกรณ์กีฬา</h1><h2>พัฒนาด้วย Laravel Framework และ Blade Template</h2></div>
+  <div class="cover-bottom"><h3>จัดทำโดย</h3><p>รหัสนักศึกษา <span class="student-value">6814120014</span></p><p>ชื่อ-นามสกุล <span class="student-value">ธนดล วันประโคน</span></p></div>
+</section>
+
+<section class="sheet"><div class="header"><span class="brand"><i></i> SPORTFLOW POS</span><small>ระบบขายหน้าร้านอุปกรณ์กีฬา</small></div><div class="footer"><span>Assignment: การพัฒนาระบบ POS ด้วย Laravel Framework</span><span>หน้า 2</span></div>
+  <p class="eyebrow">PROJECT OVERVIEW</p><h1 class="title">บทสรุปโครงงาน</h1><div class="title-line"></div>
+  <p class="lead">SportFlow POS เป็นระบบบริหารงานขายหน้าร้านสำหรับร้านขายอุปกรณ์กีฬา ออกแบบให้พนักงานทำรายการขายได้รวดเร็ว และช่วยให้ผู้จัดการตรวจสอบสต็อก สมาชิก พนักงาน และรายงานยอดขายได้จากระบบเดียว</p>
+  <div class="callout"><strong>ผลลัพธ์สำคัญ</strong>ระบบครอบคลุม 8 โมดูลตามโจทย์ มี workflow ขายจริงที่คำนวณส่วนลด รับชำระเงิน ออกใบเสร็จ ตัดสต็อก เพิ่มคะแนนสมาชิก และอัปเดตรายงานโดยอัตโนมัติ</div>
+  <h2 class="h2">สารบัญ</h2><div class="toc"><div><b>01</b><span>ความเป็นมาและแรงบันดาลใจ</span><em>3</em></div><div><b>02</b><span>วัตถุประสงค์ของ Assignment</span><em>4</em></div><div><b>03</b><span>ขอบเขตและโมดูลของระบบ</span><em>4</em></div><div><b>04</b><span>การวิเคราะห์และออกแบบระบบ</span><em>5</em></div><div><b>05</b><span>ขั้นตอนติดตั้งและเข้าใช้งาน</span><em>6</em></div><div><b>06</b><span>คู่มือการใช้งานทุกโมดูล</span><em>7-9</em></div><div><b>07</b><span>การทดสอบระบบ</span><em>10</em></div><div><b>08</b><span>สรุปผลและแนวทางพัฒนาต่อ</span><em>11</em></div></div>
+  <div class="grid3" style="margin-top:8mm"><div class="card"><div class="num">8</div><b>โมดูลหลัก</b><br><small>ครบตามข้อกำหนด</small></div><div class="card"><div class="num">26</div><b>Web Routes</b><br><small>เส้นทาง Laravel Blade</small></div><div class="card"><div class="num">3</div><b>ช่องทางชำระ</b><br><small>เงินสด QR และบัตร</small></div></div>
+</section>
+
+<section class="sheet"><div class="header"><span class="brand"><i></i> SPORTFLOW POS</span><small>ความเป็นมา</small></div><div class="footer"><span>Assignment: การพัฒนาระบบ POS ด้วย Laravel Framework</span><span>หน้า 3</span></div>
+  <p class="eyebrow">BACKGROUND</p><h1 class="title">1. ความเป็นมาของ Assignment</h1><div class="title-line"></div>
+  <p>ธุรกิจค้าปลีกอุปกรณ์กีฬามีสินค้าหลากหลายประเภท เช่น รองเท้า ลูกบอล เสื้อผ้า อุปกรณ์ฟิตเนส และอุปกรณ์เฉพาะชนิดกีฬา แต่ละรายการมีราคา ต้นทุน และจำนวนคงเหลือแตกต่างกัน การบันทึกยอดขายด้วยกระดาษหรือโปรแกรมตารางทั่วไปทำให้ตรวจสอบสต็อกได้ช้า มีโอกาสคำนวณผิด และไม่สามารถเห็นภาพรวมยอดขายได้ทันที</p>
+  <p>แรงบันดาลใจของโครงงานมาจากการต้องการสร้างระบบที่ช่วยให้ร้านขนาดเล็กถึงขนาดกลางทำงานอย่างเป็นระบบ โดยนำแนวคิด Point of Sale (POS) มารวมกับการบริหารสมาชิกและข้อมูลวิเคราะห์การขาย ระบบจึงใช้ชื่อว่า <b>SportFlow</b> ซึ่งสื่อถึงขั้นตอนการทำงานที่ไหลลื่น ตั้งแต่เลือกลูกค้า เลือกสินค้า ชำระเงิน ออกใบเสร็จ ไปจนถึงสรุปรายงาน</p>
+  <p>Assignment นี้เป็นการนำความรู้ด้าน Laravel Framework, MVC, Blade Template, Eloquent ORM, ฐานข้อมูลเชิงสัมพันธ์, validation, transaction และการออกแบบส่วนติดต่อผู้ใช้มาประยุกต์ในสถานการณ์จริงที่มีความสัมพันธ์ของข้อมูลหลายส่วน</p>
+  <h2 class="h2">ปัญหาที่ระบบต้องการแก้ไข</h2>
+  <div class="grid2"><div class="card"><h3 class="h3">01 / ความถูกต้อง</h3><p>ลดความผิดพลาดจากการคำนวณยอดรวม ส่วนลด และเงินทอนด้วยมือ</p></div><div class="card"><h3 class="h3">02 / สต็อก</h3><p>ทำให้จำนวนสินค้าคงเหลือเปลี่ยนตามรายการขายโดยอัตโนมัติ</p></div><div class="card"><h3 class="h3">03 / ความสัมพันธ์ลูกค้า</h3><p>เก็บประวัติการซื้อ คะแนนสะสม และระดับสมาชิกอย่างต่อเนื่อง</p></div><div class="card"><h3 class="h3">04 / การตัดสินใจ</h3><p>แสดงยอดขาย สินค้าใกล้หมด และสินค้าขายดีให้ผู้จัดการทราบทันที</p></div></div>
+  <h2 class="h2">กลุ่มผู้ใช้งาน</h2><table><tr><th>ผู้ใช้งาน</th><th>หน้าที่</th><th>สิทธิ์หลัก</th></tr><tr><td>ผู้จัดการร้าน</td><td>ดูแลภาพรวมและควบคุมข้อมูล</td><td>ทุกโมดูล รายงาน และตั้งค่า</td></tr><tr><td>พนักงานขาย</td><td>ให้บริการลูกค้าและรับชำระเงิน</td><td>POS สมาชิก และประวัติขาย</td></tr><tr><td>พนักงานคลัง</td><td>ดูแลสินค้าและจำนวนคงเหลือ</td><td>สินค้า สต็อก และ movement</td></tr></table>
+</section>
+
+<section class="sheet"><div class="header"><span class="brand"><i></i> SPORTFLOW POS</span><small>วัตถุประสงค์และขอบเขต</small></div><div class="footer"><span>Assignment: การพัฒนาระบบ POS ด้วย Laravel Framework</span><span>หน้า 4</span></div>
+  <p class="eyebrow">OBJECTIVES & SCOPE</p><h1 class="title">2. วัตถุประสงค์ของ Assignment</h1><div class="title-line"></div>
+  <table class="mini"><tr><th>วัตถุประสงค์</th><th>ตัวชี้วัดความสำเร็จ</th></tr><tr><td>พัฒนาระบบ POS สำหรับร้านอุปกรณ์กีฬา</td><td>สร้างรายการขายและออกเลขที่ใบเสร็จได้</td></tr><tr><td>บริหารสินค้าและสต็อก</td><td>CRUD ค้นหา และเตือนสินค้าใกล้หมด</td></tr><tr><td>บริหารสมาชิกและสิทธิประโยชน์</td><td>ค้นหา ลดราคา 5% และเพิ่มคะแนน</td></tr><tr><td>รองรับหลายช่องทางชำระเงิน</td><td>เงินสด QR Payment และบัตรเครดิต</td></tr><tr><td>สรุปผลเพื่อช่วยตัดสินใจ</td><td>KPI กราฟ สินค้าขายดี และช่องทางชำระเงิน</td></tr><tr><td>ประยุกต์ Laravel อย่างเป็นระบบ</td><td>MVC, Blade, validation และ transaction</td></tr></table>
+  <h2 class="h2">3. ขอบเขตของ Assignment</h2><div class="scope-list">
+    <div class="scope-item"><div class="scope-icon">L</div><div><b>Login</b><span>เข้าสู่ระบบ แสดงบทบาท และออกจากระบบ</span></div></div>
+    <div class="scope-item"><div class="scope-icon">M</div><div><b>Member</b><span>CRUD สมาชิก คะแนน ระดับ และยอดสะสม</span></div></div>
+    <div class="scope-item"><div class="scope-icon">E</div><div><b>Employee</b><span>ข้อมูลพนักงาน ตำแหน่ง และสถานะ</span></div></div>
+    <div class="scope-item"><div class="scope-icon">S</div><div><b>Stock</b><span>CRUD สินค้า ค้นหา หมวดหมู่ และใกล้หมด</span></div></div>
+    <div class="scope-item"><div class="scope-icon">$</div><div><b>Sale</b><span>ตะกร้า จำนวน สมาชิก ส่วนลด และยอดสุทธิ</span></div></div>
+    <div class="scope-item"><div class="scope-icon">P</div><div><b>Payment</b><span>เงินสด เงินทอน QR บัตร และใบเสร็จ</span></div></div>
+    <div class="scope-item"><div class="scope-icon">R</div><div><b>Report</b><span>KPI กราฟ ช่องทางชำระ และสินค้าขายดี</span></div></div>
+    <div class="scope-item"><div class="scope-icon">D</div><div><b>Dashboard</b><span>ภาพรวมวันนี้ รายการล่าสุด และทางลัด</span></div></div>
+  </div>
+  <div class="callout"><strong>โมดูลเพิ่มเติม</strong>ตั้งค่าข้อมูลร้าน คืนข้อมูลสาธิต ส่งออก CSV responsive design และ localStorage สำหรับการสาธิตทันที</div>
+</section>
+
+<section class="sheet"><div class="header"><span class="brand"><i></i> SPORTFLOW POS</span><small>การออกแบบระบบ</small></div><div class="footer"><span>Assignment: การพัฒนาระบบ POS ด้วย Laravel Framework</span><span>หน้า 5</span></div>
+  <p class="eyebrow">SYSTEM DESIGN</p><h1 class="title">4. การวิเคราะห์และออกแบบระบบ</h1><div class="title-line"></div>
+  <h2 class="h2">4.1 สถาปัตยกรรม</h2><div class="grid3"><div class="card" style="text-align:center"><h3 class="h3">BLADE TEMPLATE</h3><p>หน้าจอ 8 โมดูล<br>Vanilla JavaScript<br>Responsive UI</p></div><div class="card" style="text-align:center"><h3 class="h3">LARAVEL 12 MVC</h3><p>Controller + Eloquent<br>Validation + Business Rules<br>DB Transaction</p></div><div class="card" style="text-align:center"><h3 class="h3">MARIADB / MYSQL</h3><p>Products / Members<br>Sales / Payments<br>Stock Movements</p></div></div>
+  <h2 class="h2">4.2 ขั้นตอนการขาย</h2><div class="flow"><div><b>1. ลูกค้า</b><span>ทั่วไป / สมาชิก</span></div><div><b>2. สินค้า</b><span>ตรวจสต็อก</span></div><div><b>3. คำนวณ</b><span>รวม - ส่วนลด</span></div><div><b>4. ชำระ</b><span>เงินสด / QR / บัตร</span></div><div><b>5. บันทึก</b><span>ใบเสร็จ สต็อก แต้ม</span></div></div>
+  <h2 class="h2">4.3 โครงสร้างฐานข้อมูล</h2><table class="mini"><tr><th>ตาราง</th><th>ข้อมูลสำคัญ</th><th>ความสัมพันธ์</th></tr><tr><td>users</td><td>employee_code, role, status</td><td>1 พนักงานมีหลาย sales</td></tr><tr><td>categories</td><td>name, slug, is_active</td><td>1 หมวดหมู่มีหลาย products</td></tr><tr><td>products</td><td>sku, price, cost, stock, minimum</td><td>มีหลาย sale_items และ movements</td></tr><tr><td>members</td><td>code, points, tier, total_spent</td><td>1 สมาชิกมีหลาย sales</td></tr><tr><td>sales</td><td>invoice, subtotal, discount, total</td><td>หัวเอกสาร เชื่อม member/employee</td></tr><tr><td>sale_items</td><td>product, price, quantity, total</td><td>รายละเอียดสินค้าของ sale</td></tr><tr><td>payments</td><td>method, received, change</td><td>1 sale มี 1 payment</td></tr><tr><td>stock_movements</td><td>type, quantity, balance_after</td><td>ประวัติสต็อกแต่ละ product</td></tr></table>
+  <div class="callout"><strong>Data Integrity</strong>การขายใช้ database transaction และ lockForUpdate หากสินค้าไม่พอหรือการชำระผิดพลาด ระบบจะ rollback ทั้งรายการ ป้องกันข้อมูลขาย สต็อก และคะแนนไม่ตรงกัน</div>
+</section>
+
+<section class="sheet"><div class="header"><span class="brand"><i></i> SPORTFLOW POS</span><small>การติดตั้ง</small></div><div class="footer"><span>Assignment: การพัฒนาระบบ POS ด้วย Laravel Framework</span><span>หน้า 6</span></div>
+  <p class="eyebrow">INSTALLATION</p><h1 class="title">5. ขั้นตอนติดตั้งและเข้าใช้งาน</h1><div class="title-line"></div>
+  <h2 class="h2">5.1 ความต้องการของเครื่อง</h2><div class="bullet">XAMPP: PHP 8.2 ขึ้นไป, Apache และ MySQL/MariaDB</div><div class="bullet">Composer และ PHP extension pdo_mysql</div><div class="bullet">Web browser เช่น Chrome, Edge หรือ Firefox รุ่นปัจจุบัน</div>
+  <h2 class="h2">5.2 ติดตั้ง Laravel Project</h2><div class="code">composer install<br>copy .env.example .env<br>php artisan key:generate<br>php artisan migrate --seed<br>php artisan serve<br># เปิด http://127.0.0.1:8000</div>
+  <h2 class="h2">5.3 ตรวจสอบระบบ</h2><div class="code">php artisan route:list<br>php artisan test<br><br># บัญชีสาธิต<br>admin@sportflow.test / 123456</div>
+  <div class="callout"><strong>บัญชีทดลอง</strong>อีเมล: <b>admin@sportflow.test</b> &nbsp;&nbsp; รหัสผ่าน: <b>123456</b></div>
+  <h2 class="h2">Web Routes สำคัญ</h2><table class="mini"><tr><th>Method</th><th>Endpoint</th><th>หน้าที่</th></tr><tr><td>GET/POST</td><td>/login</td><td>เข้าสู่ระบบพนักงาน</td></tr><tr><td>GET/POST</td><td>/products</td><td>แสดงและเพิ่มสินค้า</td></tr><tr><td>GET/POST</td><td>/members</td><td>แสดงและเพิ่มสมาชิก</td></tr><tr><td>GET/POST</td><td>/employees</td><td>แสดงและเพิ่มพนักงาน</td></tr><tr><td>GET/POST</td><td>/sales</td><td>ประวัติและบันทึกรายการขาย</td></tr><tr><td>GET</td><td>/reports</td><td>ข้อมูล KPI และรายงาน</td></tr></table>
+</section>
+
+<section class="sheet"><div class="header"><span class="brand"><i></i> SPORTFLOW POS</span><small>คู่มือการใช้งาน</small></div><div class="footer"><span>Assignment: การพัฒนาระบบ POS ด้วย Laravel Framework</span><span>หน้า 7</span></div>
+  <p class="eyebrow">USER MANUAL</p><h1 class="title">6. คู่มือการใช้งานระบบ (1/3)</h1><div class="title-line"></div>
+  <h2 class="h2">6.1 โมดูลยืนยันตัวตน (Login)</h2><div class="steps"><div class="step"><div><b>เปิดเว็บไซต์</b><span>ระบบนำไปหน้า Login อัตโนมัติ</span></div></div><div class="step"><div><b>กรอกบัญชีทดลอง</b><span>admin@sportflow.test / 123456</span></div></div><div class="step"><div><b>กดเข้าสู่ระบบ</b><span>ข้อมูลถูกต้องจะไป Dashboard; ผิดจะแจ้งเตือน</span></div></div><div class="step"><div><b>ออกจากระบบ</b><span>กดชื่อผู้ใช้ด้านขวาบน แล้วเลือกออกจากระบบ</span></div></div></div>
+  <h2 class="h2">6.2 Dashboard</h2><div class="steps"><div class="step"><div><b>ตรวจ KPI วันนี้</b><span>ยอดขาย จำนวนบิล สมาชิก และสินค้าใกล้หมด</span></div></div><div class="step"><div><b>ดูกราฟ 7 วัน</b><span>เปรียบเทียบแนวโน้มรายได้รายวัน</span></div></div><div class="step"><div><b>ตรวจรายการล่าสุด</b><span>ดูธุรกรรมและสินค้าที่ควรเติมสต็อก</span></div></div><div class="step"><div><b>ใช้ทางลัด</b><span>ไปขายสินค้า เพิ่มสินค้า เพิ่มสมาชิก หรือรายงาน</span></div></div></div>
+  <h2 class="h2">6.3 โมดูลสมาชิก (Member)</h2><div class="steps"><div class="step"><div><b>ค้นหา</b><span>ใช้ชื่อ เบอร์โทร หรือรหัสสมาชิก</span></div></div><div class="step"><div><b>เพิ่มสมาชิก</b><span>กรอกชื่อ เบอร์โทร และอีเมล แล้วบันทึก</span></div></div><div class="step"><div><b>แก้ไข / ลบ</b><span>ใช้ไอคอนดินสอหรือถังขยะท้ายรายการ</span></div></div><div class="step"><div><b>ติดตามสิทธิ์</b><span>ดูระดับ Member/Silver/Gold คะแนน และยอดสะสม</span></div></div></div>
+  <div class="callout"><strong>Business Rule สมาชิก</strong>เมื่อเลือกสมาชิกใน POS ระบบลด 5% และเพิ่ม 1 คะแนนต่อยอดซื้อครบ 100 บาทหลังชำระสำเร็จ</div>
+</section>
+
+<section class="sheet"><div class="header"><span class="brand"><i></i> SPORTFLOW POS</span><small>คู่มือการใช้งาน</small></div><div class="footer"><span>Assignment: การพัฒนาระบบ POS ด้วย Laravel Framework</span><span>หน้า 8</span></div>
+  <p class="eyebrow">USER MANUAL</p><h1 class="title">6. คู่มือการใช้งานระบบ (2/3)</h1><div class="title-line"></div>
+  <h2 class="h2">6.4 โมดูลพนักงาน (Employee)</h2><div class="steps"><div class="step"><div><b>ดูและกรอง</b><span>ค้นหาชื่อ/รหัส หรือเลือกตำแหน่ง</span></div></div><div class="step"><div><b>เพิ่มพนักงาน</b><span>กรอกชื่อ ตำแหน่ง สถานะ เบอร์ และอีเมล</span></div></div><div class="step"><div><b>แก้ไขสถานะ</b><span>กำลังทำงาน ลาพัก หรือระงับใช้งาน</span></div></div></div>
+  <h2 class="h2">6.5 โมดูลสินค้าและสต็อก (Stock)</h2><div class="steps"><div class="step"><div><b>ตรวจภาพรวม</b><span>มูลค่าสต็อก จำนวนรายการ คงเหลือรวม และใกล้หมด</span></div></div><div class="step"><div><b>ค้นหา/กรอง</b><span>ค้นหาชื่อหรือ SKU และเลือกหมวดหมู่</span></div></div><div class="step"><div><b>เพิ่มสินค้า</b><span>กรอก SKU ชื่อ หมวด ราคา ต้นทุน จำนวน และจุดแจ้งเตือน</span></div></div><div class="step"><div><b>แก้ไข/ลบ</b><span>ระบบยืนยันก่อนลบ และเก็บ movement เมื่อปรับสต็อก</span></div></div></div>
+  <h2 class="h2">6.6 โมดูลการขาย (Sale)</h2><div class="steps"><div class="step"><div><b>เลือกสินค้า</b><span>ค้นหาหรือกรองหมวด แล้วคลิกการ์ดสินค้า</span></div></div><div class="step"><div><b>ปรับตะกร้า</b><span>ใช้ +/− เปลี่ยนจำนวน และ X ลบรายการ</span></div></div><div class="step"><div><b>เลือกลูกค้า</b><span>สมาชิกได้รับส่วนลด หรือเลือก “ลูกค้าทั่วไป”</span></div></div><div class="step"><div><b>ตรวจยอด</b><span>ระบบแสดงยอดรวม ส่วนลด และยอดสุทธิทันที</span></div></div><div class="step"><div><b>ชำระเงิน</b><span>ตรวจรายการแล้วกดปุ่ม “ชำระเงิน”</span></div></div></div>
+  <div class="callout"><strong>การป้องกันข้อผิดพลาด</strong>ไม่สามารถเพิ่มจำนวนเกินสต็อก ปุ่มชำระเงินจะปิดเมื่อไม่มีสินค้า และ backend จะตรวจสต็อกซ้ำก่อนบันทึกจริง</div>
+</section>
+
+<section class="sheet"><div class="header"><span class="brand"><i></i> SPORTFLOW POS</span><small>คู่มือการใช้งาน</small></div><div class="footer"><span>Assignment: การพัฒนาระบบ POS ด้วย Laravel Framework</span><span>หน้า 9</span></div>
+  <p class="eyebrow">USER MANUAL</p><h1 class="title">6. คู่มือการใช้งานระบบ (3/3)</h1><div class="title-line"></div>
+  <h2 class="h2">6.7 โมดูลจ่ายเงิน (Payment)</h2><div class="grid3"><div class="card"><h3 class="h3">เงินสด</h3><p>กรอกจำนวนที่รับหรือเลือกยอดลัด ระบบคำนวณเงินทอน</p></div><div class="card"><h3 class="h3">QR Payment</h3><p>แสดง QR และยอดที่ต้องชำระเพื่อให้ลูกค้าสแกน</p></div><div class="card"><h3 class="h3">บัตรเครดิต</h3><p>แจ้งให้แตะหรือเสียบบัตรที่เครื่องรับชำระ</p></div></div><div class="steps"><div class="step"><div><b>ยืนยันการชำระ</b><span>ระบบสร้างใบเสร็จ ตัดสต็อก และเพิ่มคะแนน</span></div></div><div class="step"><div><b>จบรายการ</b><span>พิมพ์ใบเสร็จหรือเริ่มขายรายการใหม่</span></div></div></div>
+  <h2 class="h2">6.8 รายการขาย</h2><div class="bullet">ค้นหาด้วยเลขใบเสร็จหรือลูกค้า และกรองช่องทางชำระ</div><div class="bullet">กดรูปตาเพื่อดูสินค้า ผู้ขาย ยอดรวม ส่วนลด และยอดสุทธิ</div><div class="bullet">กด “ส่งออก CSV” เพื่อนำข้อมูลไปวิเคราะห์ต่อ</div>
+  <h2 class="h2">6.9 รายงานการขาย (Report)</h2><div class="bullet">ดูยอดขายสุทธิ กำไรโดยประมาณ จำนวนสินค้า และค่าเฉลี่ยต่อบิล</div><div class="bullet">วิเคราะห์กราฟแนวโน้มและสัดส่วนช่องทางชำระเงิน</div><div class="bullet">ดูอันดับสินค้าขายดีและยอดขายตามหมวดหมู่</div><div class="bullet">กด “ส่งออกรายงาน” เพื่อดาวน์โหลด CSV</div>
+  <h2 class="h2">6.10 ตั้งค่าระบบ</h2><div class="bullet">แก้ไขชื่อร้าน สาขา เบอร์โทร เลขผู้เสียภาษี และที่อยู่</div><div class="bullet">กดบันทึกเพื่อเก็บค่าบนอุปกรณ์</div><div class="bullet">ใช้ “คืนค่าข้อมูล” เพื่อกลับสู่ข้อมูลสาธิตเริ่มต้น ระบบจะถามยืนยันก่อน</div>
+</section>
+
+<section class="sheet"><div class="header"><span class="brand"><i></i> SPORTFLOW POS</span><small>การทดสอบระบบ</small></div><div class="footer"><span>Assignment: การพัฒนาระบบ POS ด้วย Laravel Framework</span><span>หน้า 10</span></div>
+  <p class="eyebrow">QUALITY ASSURANCE</p><h1 class="title">7. การทดสอบระบบ</h1><div class="title-line"></div>
+  <table class="mini"><tr><th>กรณีทดสอบ</th><th>ข้อมูล/การกระทำ</th><th>ผลลัพธ์ที่คาดหวัง</th><th>ผล</th></tr><tr><td>Login ถูกต้อง</td><td>admin + 123456</td><td>เข้าสู่ Dashboard</td><td><span class="badge pass">ผ่าน</span></td></tr><tr><td>Login ไม่ถูกต้อง</td><td>รหัสผ่านผิด</td><td>แจ้งเตือนและไม่เข้าสู่ระบบ</td><td><span class="badge pass">ผ่าน</span></td></tr><tr><td>เพิ่มสินค้าตะกร้า</td><td>เลือกสินค้า 2 รายการ</td><td>จำนวนและยอดรวมอัปเดต</td><td><span class="badge pass">ผ่าน</span></td></tr><tr><td>ใช้สิทธิ์สมาชิก</td><td>เลือกสมาชิก Gold</td><td>ลด 5% และแสดงคะแนน</td><td><span class="badge pass">ผ่าน</span></td></tr><tr><td>รับเงินสด</td><td>รับมากกว่ายอดสุทธิ</td><td>คำนวณเงินทอนถูกต้อง</td><td><span class="badge pass">ผ่าน</span></td></tr><tr><td>ยืนยันการขาย</td><td>กดยืนยันชำระ</td><td>ใบเสร็จ สต็อก แต้มอัปเดต</td><td><span class="badge pass">ผ่าน</span></td></tr><tr><td>ป้องกันสต็อกไม่พอ</td><td>จำนวนขาย &gt; stock</td><td>ระบบปฏิเสธและ rollback</td><td><span class="badge pass">ผ่าน</span></td></tr><tr><td>CRUD ข้อมูล</td><td>เพิ่ม/แก้ไข/ลบ</td><td>ข้อมูลเปลี่ยนและแจ้งผล</td><td><span class="badge pass">ผ่าน</span></td></tr><tr><td>Blade views</td><td>เปิดหน้าหลักทุกโมดูล</td><td>ตอบกลับสำเร็จและแสดงผลได้</td><td><span class="badge pass">ผ่าน</span></td></tr><tr><td>Laravel test</td><td>php artisan test</td><td>7 tests / 29 assertions ผ่าน</td><td><span class="badge pass">ผ่าน</span></td></tr></table>
+  <h2 class="h2">ความปลอดภัยและความถูกต้อง</h2><div class="grid2"><div class="card"><b>Validation</b><p>ตรวจชนิดข้อมูลและ unique SKU/เบอร์สมาชิก</p></div><div class="card"><b>Transaction</b><p>หากผิดพลาดจะ rollback ทั้งรายการขาย</p></div><div class="card"><b>Row Lock</b><p>ป้องกันการขายสินค้าชิ้นสุดท้ายซ้ำ</p></div><div class="card"><b>Password Hash</b><p>backend hash รหัสผ่านด้วย Laravel Hash</p></div></div>
+</section>
+
+<section class="sheet"><div class="header"><span class="brand"><i></i> SPORTFLOW POS</span><small>สรุปผล</small></div><div class="footer"><span>Assignment: การพัฒนาระบบ POS ด้วย Laravel Framework</span><span>หน้า 11</span></div>
+  <p class="eyebrow">CONCLUSION</p><h1 class="title">8. สรุปผลและแนวทางพัฒนาต่อ</h1><div class="title-line"></div>
+  <p>SportFlow POS บรรลุขอบเขตที่กำหนด โดยครอบคลุม Login, Member, Employee, Stock, Sale, Payment, Report และ Dashboard พร้อมโมดูลตั้งค่า ระบบสาธิตกระบวนการขายครบวงจรและแสดงความสัมพันธ์ของข้อมูลได้ชัดเจน ส่วนติดต่อผู้ใช้ใช้งานง่ายและรองรับหลายขนาดหน้าจอ</p>
+  <p>Backend ออกแบบฐานข้อมูลที่ลดความซ้ำซ้อน แยกหัวรายการขายกับรายละเอียดสินค้า และเก็บ payment/stock movement สำหรับตรวจสอบย้อนหลัง การใช้ transaction ทำให้ยอดขาย สต็อก และคะแนนสมาชิกถูกต้องเป็นชุดเดียว</p>
+  <h2 class="h2">แนวทางพัฒนาต่อ</h2><div class="bullet">เพิ่ม role-based access control แยกสิทธิ์ผู้จัดการ พนักงานขาย และคลัง</div><div class="bullet">เพิ่ม Laravel Sanctum เมื่อเชื่อมต่อ mobile app หรือ client ภายนอก</div><div class="bullet">รองรับ scanner เครื่องพิมพ์ thermal ลิ้นชักเงิน และการคืนสินค้า</div><div class="bullet">เพิ่ม supplier, purchase order, รับเข้า และโอนสต็อกระหว่างสาขา</div><div class="bullet">Deploy บน cloud ด้วย MySQL, HTTPS, backup และ audit log</div>
+  <p style="text-align:center;margin-top:11mm;color:#778196">— จบรายงาน —</p>
+</section>
+<script>const previewPage=new URLSearchParams(location.search).get('page');if(previewPage){document.body.classList.add('preview');document.querySelectorAll('.sheet')[Number(previewPage)-1]?.classList.add('preview-page')}</script>
+</body></html>

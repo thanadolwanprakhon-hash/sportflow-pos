@@ -1,0 +1,19 @@
+@extends('layouts.app')
+@section('title', 'รายงานการขาย')
+@section('content')
+<div class="page-heading"><div><h1>รายงานการขาย</h1><p>วิเคราะห์รายได้ สินค้าขายดี และช่องทางชำระเงิน</p></div><button class="btn btn-outline" type="button" onclick="window.print()">พิมพ์รายงาน</button></div>
+<form class="card toolbar no-print" method="GET"><div class="field"><label>ตั้งแต่วันที่</label><input type="date" name="from" value="{{ $from->toDateString() }}"></div><div class="field"><label>ถึงวันที่</label><input type="date" name="to" value="{{ $to->toDateString() }}"></div><button class="btn btn-primary" style="margin-top:19px">แสดงรายงาน</button></form>
+<div class="stats">
+    <article class="card stat-card dark"><div class="stat-label">ยอดขายรวม</div><div class="stat-value">฿{{ number_format($summary['revenue'],2) }}</div><div class="stat-note">ช่วงวันที่ที่เลือก</div></article>
+    <article class="card stat-card"><div class="stat-label">จำนวนบิล</div><div class="stat-value">{{ number_format($summary['orders']) }}</div><div class="stat-note">รายการขายสำเร็จ</div></article>
+    <article class="card stat-card"><div class="stat-label">ยอดเฉลี่ยต่อบิล</div><div class="stat-value">฿{{ number_format($summary['average'],2) }}</div><div class="stat-note">Average order value</div></article>
+    <article class="card stat-card"><div class="stat-label">ส่วนลดรวม</div><div class="stat-value">฿{{ number_format($summary['discount'],2) }}</div><div class="stat-note">สิทธิ์สมาชิกที่ใช้ไป</div></article>
+</div>
+<div class="report-grid">
+    <div class="stack">
+        <article class="card"><div class="card-head"><div><h2>ยอดขายรายวัน</h2><span class="muted">{{ $from->locale('th')->translatedFormat('j M Y') }} – {{ $to->locale('th')->translatedFormat('j M Y') }}</span></div></div><div class="table-wrap"><table><thead><tr><th>วันที่</th><th class="text-right">จำนวนบิล</th><th class="text-right">ยอดขาย</th></tr></thead><tbody>@forelse($dailySales as $day)<tr><td><strong>{{ \Carbon\Carbon::parse($day->sale_date)->locale('th')->translatedFormat('l j F Y') }}</strong></td><td class="text-right">{{ number_format($day->orders) }}</td><td class="text-right"><strong>฿{{ number_format($day->revenue,2) }}</strong></td></tr>@empty<tr><td colspan="3" class="empty">ไม่มีข้อมูลในช่วงวันที่นี้</td></tr>@endforelse</tbody></table></div></article>
+        <article class="card"><div class="card-head"><div><h2>สินค้าขายดี</h2><span class="muted">จัดอันดับตามยอดขาย</span></div></div><div class="card-body">@php($maxProductRevenue = max((float)($topProducts->max('revenue') ?? 0),1))@forelse($topProducts as $index=>$product)<div class="rank-row"><span class="rank">{{ $index+1 }}</span><div><strong>{{ $product->product_name }}</strong><small class="muted">ขาย {{ number_format($product->quantity) }} ชิ้น</small><div class="progress"><span style="width:{{ ($product->revenue/$maxProductRevenue)*100 }}%"></span></div></div><strong>฿{{ number_format($product->revenue,2) }}</strong></div>@empty<div class="empty">ยังไม่มีข้อมูลสินค้า</div>@endforelse</div></article>
+    </div>
+    <aside class="card"><div class="card-head"><div><h2>ช่องทางชำระเงิน</h2><span class="muted">สัดส่วนรายรับ</span></div></div><div class="card-body">@php($payTotal = max((float)$payments->sum('total'),1))@forelse($payments as $payment)<div class="list-item"><span class="item-icon">{{ ['cash'=>'฿','qr'=>'QR','card'=>'▭'][$payment->method] ?? '?' }}</span><span class="item-main"><strong>{{ ['cash'=>'เงินสด','qr'=>'QR Code','card'=>'บัตร'][$payment->method] ?? $payment->method }}</strong><small>{{ $payment->orders }} บิล · {{ number_format(($payment->total/$payTotal)*100,1) }}%</small></span><strong>฿{{ number_format($payment->total,2) }}</strong></div>@empty<div class="empty">ยังไม่มีข้อมูลการชำระเงิน</div>@endforelse</div></aside>
+</div>
+@endsection
